@@ -6,11 +6,11 @@
 
 .layout {
     display: grid;
-    grid-template-columns: 350px 1fr;
+    grid-template-columns: 1fr 200px;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
         "header header"
-        "sidebar main"
+        "main sidebar"
         "footer footer";
     min-height: 100vh;
 }
