@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="ism">Ism</label>
+        <input placeholder="Ismingizni kiriting..." type="text" id="ism">
+        <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Emailingizni kiriting...">
+        <br><br>
+
+        <label for="parol">Parol</label>
+        <input type="password" id="parol" placeholder="Parolingizni kiriting...">
+        <br>
+        <br>
+
+        <label for="sana">Tug'ilgan yilingiz</label>
+        <input type="date" id="sana">
+        <br><br>
+
+        <label for="erkak">Erkak</label>
+        <input type="radio" name="jins" id="erkak" value="erkak">
+
+        <label for="ayol">Ayol</label>
+        <input type="radio" name="jins" id="ayol" value="ayol">
+
+        <br><br>
+
+        <label for="rozi">Rozimisiz</label>
+        <input type="checkbox" id="rozi" name="roziman" value="ha">
+        <input type="checkbox" name="hobby[]" value="futbol"> Futbol
+        <input type="checkbox" name="hobby[]" value="kitob"> Kitob
+        <input type="checkbox" name="hobby[]" value="kino"> Kino
+
+
+        <br><br>
+
+        <label for="til">Dasturlash tillari</label>
+        <select id="til" multiple size="1">
+            <optgroup label="Birinchi">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+            </optgroup>
+            <optgroup label="Ikkinchi">
+                <option value="js">JavaScript</option>
+                <option value="php">PHP</option>
+            </optgroup>
+        </select>
+
+        <select id="til" size="1">
+            <option value="0" selected disabled>Dafault qiymat</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+            <option value="php">PHP</option>
+        </select>
+
+        <br><br>
+
+        <label for="manzil">Qayerga borasiz?</label>
+        <select id="manzil">
+            <option value="0" selected disabled>
+                Shaharni tanlang
+            </option>
+
+            <optgroup label="Farg'ona viloyati">
+                <option value="1">Farg'ona</option>
+                <option value="2">Qo'qon</option>
+                <option value="3">Marg'ilon</option>
+            </optgroup>
+
+            <optgroup label="Andijon viloyati">
+                <option value="2">Andijon</option>
+                <option value="2">Andijon</option>
+                <option value="2">Andijon</option>
+
+            </optgroup>
+
+            <option value="3">Namangan</option>
+            <option value="4">Toshkent</option>
+            <option value="5">Sirdaryo</option>
+        </select>
+
+        <br><br>
+        <select multiple size="1">
+            <option value="">HTML</option>
+            <option value="">CSS</option>
+            <option value="">JavaScript</option>
+            <option value="">Frontend</option>
+            <option value="">Backend</option>
+        </select>
+
+        <br><br>
+
+        <label for="fikr">Fikr-mulohaza</label>
+        <textarea id="fikr" rows="20" cols="50" placeholder="Fikr bildiring..."></textarea>
+        <br><br>
+
+        <label for="about">About</label><br>
+        <textarea id="about" cols="50" rows="20" placeholder="O'zingiz haqingizda gapirib bering..."></textarea>
+
+        <br><br>
+        <button type="submit">Yuborish</button>
+    </form>
+</body>
+
+</html>
