@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Q4OS</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                text-decoration: none;
+            }
+            body {
+                background-image: url("../../assets/bg.jpeg");
+                background-size: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            main {
+                width: 900px;
+                border: 1px solid #6994cb;
+            }
+            .page__header {
+                #links {
+                    text-align: right;
+                    background-color: #495268;
+                    padding: 10px 20px 5px 0;
+                    font-size: 0.8rem;
+                    a {
+                        color: #fff;
+                    }
+                }
+                #banner {
+                    width: 100%;
+                    height: 200px;
+                    background-image: url("../../assets/q4os-header.jpeg");
+                    border-top: 2px solid #2b3b7c;
+                    border-bottom: 5px solid #2b3b7c;
+                }
+                #menu {
+                    height: 31px;
+                    width: 100%;
+                    margin-top: -31px;
+                    ul {
+                        list-style: none;
+                        li {
+                            a {
+                                padding: 10px 15px;
+                                background-color: #26327f;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+            .page__container {
+                display: grid;
+                grid-template-columns: 1fr 200px;
+                grid-template-rows: 1fr auto;
+                grid-template-areas: ".content aside";
+            }
+            .content {
+                padding: 2px 3px 15px 19px;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="page">
+            <header class="page__header">
+                <nav id="links">
+                    <a href="">Donate |</a>
+                    <a href="">Form |</a>
+                    <a href="">News |</a>
+                    <a href="">Shop |</a>
+                    <a href="">Contact </a>
+                </nav>
+                <div id="banner"></div>
+                <nav id="menu">
+                    <ul>
+                        <li>
+                            <a href="">Home</a>
+                            <a href="">Downloads</a>
+                            <a href="">Documents</a>
+                            <a href="">Business</a>
+                            <a href="">Developers</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="page__container">
+                <div class="content">
+                    <h1>Welcome to Q4OS</h1>
+                </div>
+                <aside>Aside</aside>
+            </div>
+        </main>
+    </body>
+</html>

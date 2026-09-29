@@ -1,62 +1,72 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Layout and Semantics</title>
+        <style>
+            body {
+                background-color: #1e1e2e;
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Layout and Semantics</title>
-    <style>
-        .box {
-            background-color: blue;
-            font-size: 20px;
-            color: white;
-            text-align: center;
-            border: 1px solid red;
-        }
+                background-image:
+                    linear-gradient(#ffffff10 1px, transparent 1px),
+                    linear-gradient(90deg, #ffffff10 1px, transparent 1px);
 
-        header {
-            height: 100px;
-            line-height: 100px;
-        }
+                background-size: 40px 40px;
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            .box {
+                /* background-color: blue; */
+                outline: 1px solid blue;
+                font-size: 20px;
+                color: #fff;
+                text-align: center;
+            }
 
-        nav {
-            height: 100px;
-            line-height: 100px;
-            margin-top: 1px;
-        }
+            header {
+                height: 100px;
+                line-height: 100px;
+            }
 
-        section {
-            height: 500px;
-            line-height: 500px;
-            margin-top: 1px;
-            width: 70%;
-            float: left;
-        }
+            nav {
+                height: 100px;
+                line-height: 100px;
+                margin-top: 1px;
+            }
 
-        aside {
-            height: 500px;
-            line-height: 500px;
-            margin-top: 1px;
-            width: 30%;
-            float: left;
-        }
+            section {
+                height: 500px;
+                line-height: 500px;
+                margin-top: 1px;
+                width: 70%;
+                float: left;
+            }
 
-        footer {
-            height: 100px;
-            line-height: 100px;
-            margin-top: 1px;
-            width: 100%;
-            float: left;
-        }
-    </style>
-</head>
+            aside {
+                height: 500px;
+                line-height: 500px;
+                margin-top: 1px;
+                width: 30%;
+                float: left;
+            }
 
-<body>
-    <header class="box">Header</header>
-    <nav class="box">Nav</nav>
-    <section class="box">Section</section>
-    <aside class="box">Aside</aside>
-    <footer class="box">Footer</footer>
-</body>
+            footer {
+                height: 100px;
+                line-height: 100px;
+                margin-top: 1px;
+                width: 100%;
+                float: left;
+            }
+        </style>
+    </head>
 
+    <body>
+        <header class="box">Header</header>
+        <nav class="box">Nav</nav>
+        <section class="box">Section</section>
+        <aside class="box">Aside</aside>
+        <footer class="box">Footer</footer>
+    </body>
 </html>
