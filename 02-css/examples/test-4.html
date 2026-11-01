@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: #1e1e2e;
+            }
+            .navbar {
+                display: flex;
+                align-items: center;
+                height: 70px;
+                color: #fff;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            }
+
+            .logo {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                padding: 0 40px;
+                font-family: Georgia, serif;
+                font-size: 20px;
+                color: #fff;
+                text-decoration: none;
+            }
+
+            .menu {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                gap: 48px;
+            }
+
+            .menu a,
+            .login {
+                color: rgba(255, 255, 255, 0.6);
+                font-size: 15px;
+                text-decoration: none;
+            }
+
+            .actions {
+                display: flex;
+                align-items: center;
+                height: 100%;
+            }
+
+            .actions .login {
+                padding: 0 60px;
+                color: #fff;
+            }
+
+            .cta {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                height: 100%;
+                padding: 0 40px;
+                background: rgba(30, 60, 70, 0.4);
+                border-left: 1px solid rgba(255, 255, 255, 0.08);
+                color: #fff;
+                font-size: 15px;
+                text-decoration: none;
+            }
+
+            .cta svg {
+                flex-shrink: 0;
+            }
+            .hero {
+                position: relative;
+                overflow: hidden;
+                min-height: 400px;
+            }
+
+            .grid-layer {
+                position: absolute;
+                inset: 0;
+                pointer-events: none;
+            }
+
+            /* Gorizontal chiziq */
+            .hline {
+                position: absolute;
+                left: 0;
+                right: 0;
+                height: 1px;
+                background: rgba(255, 255, 255, 0.08);
+            }
+
+            /* Vertikal chiziq */
+            .vline {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 1px;
+                background: rgba(255, 255, 255, 0.08);
+            }
+
+            /* Burchak nuqtasi */
+            .dot {
+                position: absolute;
+                width: 5px;
+                height: 5px;
+                background: rgba(255, 255, 255, 0.35);
+                transform: translate(-50%, -50%);
+            }
+
+            /* Diagonal chiziqlar */
+            .diagonals {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .diagonals line {
+                stroke: rgba(255, 255, 255, 0.08);
+                stroke-width: 1;
+                vector-effect: non-scaling-stroke;
+            }
+
+            /* Kontent chiziqlar ustida tursin */
+            .cards {
+                position: relative;
+                z-index: 1;
+            }
+            h1 {
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="frame">
+            <header class="navbar">
+                <a class="logo" href="/">
+                    <svg
+                        width="28"
+                        height="20"
+                        viewBox="0 0 28 20"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                    >
+                        <path d="M2 14 L14 4 L26 14" />
+                        <path d="M5 18 L14 10 L23 18" />
+                        <path d="M14 2 V10" />
+                    </svg>
+                    <span>CodeCrafters</span>
+                </a>
+
+                <nav class="menu">
+                    <a href="#">Philosophy</a>
+                    <a href="#">About</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Gifts</a>
+                </nav>
+
+                <div class="actions">
+                    <a href="#" class="login">Log in</a>
+                    <a href="#" class="cta">
+                        Try a challenge
+                        <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                        >
+                            <path d="M2 8 H14 M9 3 L14 8 L9 13" />
+                        </svg>
+                    </a>
+                </div>
+            </header>
+            <section class="hero">
+                <!-- fon qatlami: barcha chiziqlar shu yerda -->
+                <div class="grid-layer" aria-hidden="true">
+                    <!-- gorizontal chiziqlar -->
+                    <div class="hline" style="top: 40px"></div>
+                    <div class="hline" style="top: 360px"></div>
+
+                    <!-- vertikal chiziqlar -->
+                    <div class="vline" style="left: 230px"></div>
+                    <div class="vline" style="left: 1135px"></div>
+
+                    <!-- diagonal chiziqlar (svg) -->
+                    <svg
+                        class="diagonals"
+                        preserveaspectratio="none"
+                        viewbox="0 0 100 100"
+                    >
+                        <line x1="0" y1="0" x2="23" y2="90" />
+                        <line x1="100" y1="0" x2="77" y2="90" />
+                    </svg>
+
+                    <!-- burchak nuqtalari -->
+                    <span class="dot" style="left: 230px; top: 40px"></span>
+                    <span class="dot" style="left: 1135px; top: 40px"></span>
+                    <span class="dot" style="left: 230px; top: 360px"></span>
+                    <span class="dot" style="left: 1135px; top: 360px"></span>
+                </div>
+
+                <!-- asosiy kontent -->
+                <div class="cards">
+                    <!-- kartalar -->
+                    <h1>salom dunyo</h1>
+                </div>
+            </section>
+            <section class="hero">
+                <!-- fon qatlami: barcha chiziqlar shu yerda -->
+                <div class="grid-layer" aria-hidden="true">
+                    <!-- gorizontal chiziqlar -->
+                    <div class="hline" style="top: 40px"></div>
+                    <div class="hline" style="top: 360px"></div>
+
+                    <!-- vertikal chiziqlar -->
+                    <div class="vline" style="left: 230px"></div>
+                    <div class="vline" style="left: 1135px"></div>
+
+                    <!-- diagonal chiziqlar (svg) -->
+                    <svg
+                        class="diagonals"
+                        preserveaspectratio="none"
+                        viewbox="0 0 100 100"
+                    >
+                        <line x1="0" y1="90" x2="23" y2="10" />
+                        <line x1="100" y1="90" x2="77" y2="10" />
+                    </svg>
+
+                    <!-- burchak nuqtalari -->
+                    <span class="dot" style="left: 230px; top: 40px"></span>
+                    <span class="dot" style="left: 1135px; top: 40px"></span>
+                    <span class="dot" style="left: 230px; top: 360px"></span>
+                    <span class="dot" style="left: 1135px; top: 360px"></span>
+                </div>
+
+                <!-- asosiy kontent -->
+                <div class="cards">
+                    <!-- kartalar -->
+                    <h1>salom dunyo</h1>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
